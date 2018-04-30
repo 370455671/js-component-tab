@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+      .clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+} 
+.bigtab{
+  margin-top: 20px
+}
+.tab{
+  float: left;
+}
+.content{
+  width: 400px;
+ /*  height: 200px; */
+  border: 1px solid;
+  text-align: center;
+  background: #fff;
+}
+.fourtabs{
+ /*  border: 1px solid pink; */
+  margin-top: 30px;
+}
+.tab{
+  padding: 10px 20px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  cursor:pointer;
+  background: pink;
+}
+.tab:nth-child(4){
+  border-right: 1px solid;
+}
+.panel{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: none;
+}
+.panel.active{
+  display: block;
+}
+.tab.active{
+  background: #fff;
+}
+  </style>
+</head>
+<body>
+<div class="bigtab">
+  <div class="fourtabs clearfix">
+    <div class="tab active">1</div>
+    <div class="tab">2</div>
+    <div class="tab">3</div>
+    <div class="tab">4</div>
+  </div>
+  <div class="content">
+    <div class="panel active">panel1</div>
+    <div class="panel">panel2</div>
+    <div class="panel">panel3</div>
+    <div class="panel">panel4</div>
+  </div>
+  
+</div>
+  <div class="bigtab">
+  <div class="fourtabs clearfix">
+    <div class="tab active">1</div>
+    <div class="tab">2</div>
+    <div class="tab">3</div>
+    <div class="tab">4</div>
+  </div>
+  <div class="content">
+    <div class="panel active">panel1</div>
+    <div class="panel">panel2</div>
+    <div class="panel">panel3</div>
+    <div class="panel">panel4</div>
+  </div>
+</div>
+<script src="/tab.js"></script>
+</body>
+</html>
